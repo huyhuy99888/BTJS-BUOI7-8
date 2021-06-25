@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1 class="text-center">Array</h1>
+    <div class="body-content">
+        <div class="inputData">
+            <div class="inputData__button">
+                <a name="" id="addItem" class="btn btn-warning btn-block" role="button">Tạo mảng</a>
+                <p>Mảng<span class="arrcount"></span>: [<span class="array-content"></span>]</p>
+            </div>
+            <div class="inputData__content">
+                
+            </div>
+        </div>
+        <hr>
+        <div class="processing row justify-content-center m-auto">
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="sumPositive" class="btn btn-warning" role="button">Tính tổng số dương</a>
+                <p id="sumPosResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="countPositive" class="btn btn-warning" role="button">Đếm số dương</a>
+                <p id="countPosResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="minNum" class="btn btn-warning" role="button">Số bé nhất trong mảng</a>
+                <p id="minResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="minNumber" class="btn btn-warning" role="button">Số dương bé nhất</a>
+                <p id="minNumResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="lastEven" class="btn btn-warning" role="button">Số chẵn cuối cùng</a>
+                <p id="lastEvenResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="changePos" class="btn btn-warning" role="button">Thay đổi 2 vị trí</a>
+                <p id="changePosResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="arangeArray" class="btn btn-warning" role="button">Sắp xếp mảng tăng dần</a>
+                <p id="arangeArrResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="primeNumber" class="btn btn-warning" role="button">Số nguyên tố đầu tiên</a>
+                <p id="primeNumResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="addArray" class="btn btn-warning" role="button">Tạo 1 mảng<br>Đếm số nguyên</a>
+                <p id="countIntResult"></p>
+            </div>
+            <div class="processing__item col-12 col-md-12 col-xl-12">
+                <a name="" id="compareNum" class="btn btn-warning" role="button">So sánh số dương và số âm</a>
+                <p id="compareNumResult"></p>
+            </div>
+        </div>
+    </div>
+    <div id="popID" class="popAddArr">
+        <div class="addForm">
+            <div class="form-group">
+              <label for=""></label>
+              <input type="text"
+                class="form-control" name="" id="inData" aria-describedby="helpId" placeholder="">
+              <small class="isVal"></small>
+            </div>
+            <div class="button row justify-content-center">
+                <a name="" id="addArr" class="btn btn-outline-success  btn-block" role="button">Nhập vào mảng</a>
+                <a name="" id="close" class="btn btn-outline-danger btn-block" role="button">Đóng</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popPos" class="popAddArr">
+        <div class="addForm positionArr">
+            <p></p>
+        <div class="row justify-content-center" style="margin: auto;">
+            <div class="form-group mr-2">
+                <label for="">Vị trí thứ 1</label>
+                <input type="text"
+                  class="form-control" name="" id="firstPos" aria-describedby="helpId" placeholder="">
+                <small class="isPos"></small>
+              </div>
+              <div class="form-group">
+                <label for="">Vị trí thứ 2</label>
+                <input type="text"
+                  class="form-control" name="" id="secondPos" aria-describedby="helpId" placeholder="">
+                <small class="isPos"></small>
+              </div>
+        </div>
+
+        <div class="button row justify-content-center">
+            <a name="" id="ChangeArr" class="btn btn-warning mx-1" role="button">Thực thi</a>
+            <a name="" id="closepopPos" class="btn btn-secondary" role="button">Đóng</a>
+        </div>
+        </div>        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/calculate.js"></script>
+  </body>
+</html>

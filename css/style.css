@@ -1,0 +1,123 @@
+.body-content{
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgb(77, 76, 76);
+    margin-bottom: 20px;
+}
+.inputData__content{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.inputData__button p{
+    display: none;
+}
+.processing__item{
+    text-align: center;
+    cursor: pointer;
+}
+
+.processing__item a{
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: .5s;
+    position: relative;
+}
+.processing__item a::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-top:1px solid rgb(255, 136, 0);
+    
+}
+.processing__item a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom:1px solid rgb(248, 171, 3);
+    
+}
+.processing__item a:hover::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    transition: 1s;
+}
+.processing__item a:hover::after{
+    content: " ";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    transition: 1s;
+}
+
+.processing__item .btn-warning{
+    right: 0;
+    transition: .5s;
+    font-size: 16px;
+    color:black;
+   
+  
+}
+ .processing__item .btn-warning:hover{
+    right: 0;
+    background: rgb(250, 250, 250);
+    transition: .5s;
+    font-size: 20px;
+    color:orange !important;
+}
+
+.popAddArr{
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    transition: top .5s;
+    display: none;
+}
+.popAddArr-showed{
+    display: block;
+}
+.popAddArr-popup{
+    top: 28%;
+}
+.addForm{
+    width: 20%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border: 2px solid black;
+}
+.positionArr{
+    width: 50%;
+    text-align: center;
+}
+small{
+    color: rgb(255, 0, 0);
+}
+.strColor{
+    color: red;
+    font-weight: bold;
+}
+.btn{
+    cursor: pointer;
+}
+p #sumPosResult {
+    background-color: burlywood;
+}
